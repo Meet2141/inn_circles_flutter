@@ -6,6 +6,8 @@ sealed class SplashState {
 
 final class SplashInitial extends SplashState {}
 
-final class SplashSuccess extends SplashState {}
+final class SplashToGetStarted extends SplashState {}
+
+final class SplashToSubscription extends SplashState {}
 
 final class SplashFailure extends SplashState {}

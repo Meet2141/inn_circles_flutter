@@ -1,6 +1,6 @@
 import '../app_state/app_state.dart';
 
-///Created typedef for Map<String, dynamic> (JSON File Type)
+///Created typedef for Map <String, dynamic> (JSON File Type)
 typedef JsonPayLoad = Map<String, dynamic>;
 
 /// Global variable for AppState class

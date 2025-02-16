@@ -30,8 +30,11 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return BlocListener<SplashBloc, SplashState>(
       listener: (context, state) {
-        if (state is SplashSuccess) {
+        if (state is SplashToGetStarted) {
           context.goNamed(RoutingConstants.getStarted);
+        }
+        if (state is SplashToSubscription) {
+          context.goNamed(RoutingConstants.subscription);
         }
         if (state is SplashFailure) {
           ToastUtils.showFailed(message: StringConstants.somethingWentWrong);
